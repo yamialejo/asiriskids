@@ -1,0 +1,22 @@
+nav {
+    
+    ul {
+        position: absolute;
+        
+        li {
+            
+            a {
+                background-color: #000000;
+                color: #FFFFFF;
+                text-decoration: none;
+                padding: 12px 12px;
+            }
+        }
+    }
+
+    li :hover {
+    display: flex;
+    padding: 12px 12px;
+    background-color: #F5B342;
+    }
+}    

@@ -1,0 +1,53 @@
+$redes: (
+    facebook: #1B74F4,
+    instagram: #E44F6E,
+);
+
+footer {
+    height: auto;
+    background: linear-gradient(90deg, rgba(218,216,112,1) 0%, rgba(255,205,88,1) 50%, rgba(255,150,54,1) 100%);
+    padding: 15px 20px;
+    border: solid 5px #5AD17A;
+    display: flex;
+
+    #logo {
+        text-align: center;
+    }
+
+    ul { text-align: center;
+        @each $red, $color in $redes {
+            .btn-#{$red} {
+            background-color: $color;
+            }
+        }
+    }
+
+    li {
+        list-style-type: none;
+        margin: 10px;
+        padding: 10px;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    #afip {
+        text-align: center;
+    }
+
+    #copyright p {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 15px;
+    font-weight: 20;
+    line-height: 1;
+    text-align: justify;
+    color: #000000;
+
+    margin-top: 75px;
+    }
+}

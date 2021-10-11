@@ -1,0 +1,269 @@
+nav ul {
+  position: absolute; }
+  nav ul li a {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 12px; }
+
+nav li :hover {
+  display: flex;
+  padding: 12px 12px;
+  background-color: #F5B342; }
+
+header {
+  height: 50vh;
+  background-color: #C9F0C7;
+  background-image: url(../img/headerasiris.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid 5px #5AD17A;
+  margin: 0px;
+  display: flex; }
+
+main {
+  display: flex;
+  justify-content: center; }
+  main section {
+    padding: 10px;
+    border: solid 5px #F5B342;
+    margin: 25px !important; }
+    main section table #colorNaranja {
+      color: #F5B342; }
+    main section table #colorFucsia {
+      color: #F5096B; }
+    main section table #colorVerde {
+      color: #5AD17A; }
+    main section .flex-container {
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+    main section .flex-container div {
+      margin: 0;
+      padding: 10px; }
+    main section .imagen img {
+      width: 300px;
+      height: 300px; }
+    main section .imagen :hover {
+      transform: scale(1.02); }
+  main aside {
+    padding: 10px;
+    border: solid 5px #F5B342;
+    margin: 25px !important; }
+
+#imagen {
+  padding: 10px;
+  border: solid 5px #F5B342;
+  margin: 50px; }
+
+footer {
+  height: auto;
+  background: linear-gradient(90deg, #dad870 0%, #ffcd58 50%, #ff9636 100%);
+  padding: 15px 20px;
+  border: solid 5px #5AD17A;
+  display: flex; }
+  footer #logo {
+    text-align: center; }
+  footer ul {
+    text-align: center; }
+    footer ul .btn-facebook {
+      background-color: #1B74F4; }
+    footer ul .btn-instagram {
+      background-color: #E44F6E; }
+  footer li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  footer a {
+    color: #FFFFFF;
+    text-decoration: none; }
+  footer #afip {
+    text-align: center; }
+  footer #copyright p {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 15px;
+    font-weight: 20;
+    line-height: 1;
+    text-align: justify;
+    color: #000000;
+    margin-top: 75px; }
+
+body {
+  background-color: #C9F0C7;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 20px;
+  font-weight: 50;
+  line-height: 1;
+  text-align: justify;
+  color: #000000;
+  margin: 0;
+  padding: 0; }
+  body .whatsapp {
+    display: flex;
+    position: fixed;
+    bottom: 15px;
+    right: 50px;
+    background-color: #5AD17A;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 10px; }
+
+/*Fuentes y colores*/
+h1 {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 80px;
+  font-weight: 150;
+  line-height: 1.5;
+  text-align: center;
+  color: #000000;
+  margin: auto; }
+
+h2 {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 25px;
+  font-weight: 75;
+  line-height: 1;
+  text-align: center;
+  color: #908D91;
+  text-transform: capitalize;
+  text-decoration: underline 1px #F5B342; }
+
+h3 {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 25px;
+  font-weight: 75;
+  line-height: 1;
+  text-align: center;
+  color: #908D91;
+  text-transform: capitalize;
+  text-decoration: underline 1px #F5B342; }
+
+p {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 20px;
+  font-weight: 50;
+  line-height: 1;
+  text-align: justify;
+  color: #3F5713; }
+
+/* Grids*/
+/*Page Home (en main)*/
+.grid-home {
+  display: grid;
+  grid-template-columns: no-repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-gap: 0;
+  grid-template-areas: "enteritos enteritos"  "imagen imagen"; }
+
+#enteritos {
+  grid-area: enteritos; }
+
+#imagen {
+  grid-area: imagen; }
+
+/*media querie*/
+@media only screen and (min-width: 768px) {
+  .grid-home {
+    background-color: #C9F0C7;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "enteritos imagen"; } }
+
+@media only screen and (min-width: 1024px) {
+  .grid-home {
+    background-color: #C9F0C7;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "enteritos imagen"; } }
+
+/*Page Cambios (en main)*/
+.grid-cambios {
+  display: grid;
+  grid-template-columns: no-repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-gap: 0;
+  grid-template-areas: "section section" "aside aside" "asideUno asideUno"; }
+
+#section {
+  grid-area: section; }
+
+#aside {
+  grid-area: aside; }
+
+#asideUno {
+  grid-area: asideUno; }
+
+/*media querie*/
+@media only screen and (min-width: 768px) {
+  .grid-cambios {
+    background-color: #C9F0C7;
+    grid-template-columns: no-repeat(2, 1fr);
+    grid-template-areas: "section section" "aside asideUno"; } }
+
+@media only screen and (min-width: 1024px) {
+  .grid-cambios {
+    background-color: #C9F0C7;
+    grid-template-columns: no-repeat(2, 1fr);
+    grid-template-areas: "section section" "aside asideUno"; } }
+
+/*Page Contacto (en main)*/
+.grid-contacto {
+  display: grid;
+  grid-template-columns: no-repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-gap: 0;
+  grid-template-areas: "formulario formulario" "ubicacion ubicacion"; }
+
+#formulario {
+  grid-area: formulario; }
+
+#ubicacion {
+  grid-area: ubicacion; }
+
+/*media querie*/
+@media only screen and (min-width: 768px) {
+  .grid-contacto {
+    background-color: #C9F0C7;
+    grid-template-columns: no-repeat(2, 1fr);
+    grid-template-areas: "formulario ubicacion"; } }
+
+@media only screen and (min-width: 1024px) {
+  .grid-contacto {
+    background-color: #C9F0C7;
+    grid-template-columns: no-repeat(2, 1fr);
+    grid-template-areas: "formulario ubicacion"; } }
+
+/*Footer - todas las pages*/
+.grid-footer {
+  display: grid;
+  grid-template-columns: no-repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-gap: 0;
+  grid-template-areas: "logo logo logo" "rrss rrss rrss" "afip afip afip" "copyright copyright copyright"; }
+
+#logo {
+  grid-area: logo; }
+
+#rrss {
+  grid-area: rrss; }
+
+#afip {
+  grid-area: afip; }
+
+#copyright {
+  grid-area: copyright; }
+
+/*media querie*/
+@media only screen and (min-width: 768px) {
+  .grid-footer {
+    background-color: #C9F0C7;
+    grid-template-columns: no-repeat(3, 1fr);
+    grid-template-areas: "logo rrss afip" "copyright copyright copyright"; } }
+
+@media only screen and (min-width: 1024px) {
+  .grid-footer {
+    background-color: #C9F0C7;
+    grid-template-columns: no-repeat(3, 1fr);
+    grid-template-areas: "logo rrss afip" "copyright copyright copyright"; } }

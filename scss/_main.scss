@@ -1,0 +1,57 @@
+main {
+    display: flex;
+    justify-content: center;
+
+    section {
+        padding: 10px;
+        border: solid 5px #F5B342;
+        margin: 25px !important;
+
+        table {
+            #colorNaranja {
+                color: #F5B342;
+            }
+            #colorFucsia {
+                color: #F5096B;
+            }
+            #colorVerde {
+                color: #5AD17A;
+            }
+        }
+
+        .flex-container {
+            padding: 10px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .flex-container div {
+            margin: 0;
+            padding: 10px;
+        }
+
+        .imagen img {
+            width: 300px;
+            height: 300px;  
+        }
+        
+        .imagen :hover {
+            transform: scale(1.02);
+        }
+    }
+
+    aside {
+        padding: 10px;
+        border: solid 5px #F5B342;
+        margin: 25px !important;
+    }
+}
+
+#imagen {
+    padding: 10px;
+    border: solid 5px #F5B342;
+    margin: 50px;
+}
+
